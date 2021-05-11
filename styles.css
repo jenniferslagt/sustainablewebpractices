@@ -9,6 +9,19 @@ p {
 	color: #989898;
 }
 
+/* Navbar styling */
+.navbar {
+	display: flex;
+	justify-content: space-between;
+}
+.navbar.container {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.navbar-image {
+	width: 100px;
+	height: auto;
+}
 
 /* Container settings */
 .container {
@@ -68,6 +81,9 @@ li {
 .hero-banner {
 	background: none;
 	text-align: left;
+}
+.hero-banner.container {
+	margin-top: 0;
 }
 @media (min-width: 485px) {
 	.hero-banner {
