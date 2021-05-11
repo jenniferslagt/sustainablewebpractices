@@ -1,0 +1,145 @@
+/* Default elements and structures */
+body {
+	 background: black;
+	 color: lightgrey;
+	 font-family: Arial, Helvetica, sans-serif;
+}
+p {
+	line-height: 1.5rem;
+	color: #989898;
+}
+
+
+/* Container settings */
+.container {
+	text-align: center;
+	margin: 5rem auto;
+	width: 100%;
+}
+@media (min-width: 768px){
+	.container {
+		margin: 10rem auto;
+		max-width: 920px;
+		width: 100%; 
+	}
+}
+@media (min-width: 1024px) {
+	.container {
+		max-width: 960px;
+		width: 100%;
+	}
+}
+@media (min-width: 1215px) {
+	.container {
+		max-width: 1052px;
+		width: 100%; 
+	}
+}
+
+/* Basic element styling / options */
+.green-text {
+	color: #43bc2a;
+}
+.title {
+	font-size: 2rem;
+	text-align: center;
+}
+.button {
+	all: unset;
+	background: #43bc2a;
+	color: lightgrey;
+	font-size: 1rem;
+	font-weight: bold;
+	border-radius: 2rem;
+	padding: 0.75rem 1.5rem;
+}
+.is-link {
+	color: #989898;
+	word-wrap: break-word;
+}
+ul {
+	padding-left: 0;
+}
+li {
+	list-style-type: none;
+}
+
+/* Hero banner */
+.hero-banner {
+	background: none;
+	text-align: left;
+}
+@media (min-width: 485px) {
+	.hero-banner {
+		background: url(images/earth.svg);
+		background-size: 60%;
+		background-position: 190%;
+		background-repeat: no-repeat;
+		padding-bottom: 6rem;
+	}
+}
+@media (min-width: 768px) {
+	.hero-banner {
+		background: url(images/earth.svg);
+		background-size: 60%;
+		background-position: right;
+		background-repeat: no-repeat;
+		padding-bottom: 6rem;
+		background-size: 40%;
+	}
+}
+.hero-title {
+	font-size: 2.75rem;
+}
+.hero-subtitle {
+	margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+	.hero-subtitle {
+		margin-bottom: 5rem;
+	}
+}
+.hero-title, .hero-subtitle {
+	width: 100%;
+}
+@media (min-width: 475px) {
+	.hero-title, .hero-subtitle {
+		width: 75%;
+	}
+}
+@media (min-width: 768px) {
+	.hero-title, .hero-subtitle {
+		width: 50%;
+	}
+}
+
+/* Card wrapper */
+.card-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.card {
+	background: rgba(255, 255, 255, 0.1);
+	width: 230px;
+	margin: 0.5rem;
+	padding: 0.5rem;
+}
+.card.is-one-third {
+	background: none;
+}
+.card-image {
+	width: 75px;
+	margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+	.card.is-one-third {
+		margin: 0;
+		width: 30%;
+	}
+}
+.card-number {
+	font-size: 3rem;
+	font-weight: bold;
+	color: #43bc2a;
+}
